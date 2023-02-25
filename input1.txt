@@ -1,0 +1,8 @@
+1110
+start STOP
+start 1 -> q1 _ R
+start 0 -> start _ R
+start _ -> STOP 0 S
+q1 1 -> start _ R
+q1 0 -> q1 _ R
+q1 _ -> STOP 1 S

@@ -87,7 +87,6 @@ int main(int argc, char *argv[])
 void print_result(char* string_format)
 {
     make_trimmed_string();
-    printf("\n");
     printf(string_format, ops_count);
     printf("%s\n", trimmed_string);
     printf("%s %d\n", state, head - new_zero_index);

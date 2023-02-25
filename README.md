@@ -1,4 +1,4 @@
-# TuringMachine
+# Turing Machine
 
 A simple Turing machine on `C` that can solve tasks by input file with specific format.
 
@@ -12,14 +12,25 @@ Input format:
 Transaction line format: <br />
 **`"current state" "input symbol" -> "new state" "new symbol" "movement"`**
 
+P.S. States that are not initial or terminal are written directly in transitions and nowhere else.
+
 ___
 
-At the end of program's work terminal should contain two strings. First string contains information about program work, second string contains last state and transactions count at the moment of program's finish.
+Usage:
 
-Next paragraphs is about options of first line.
+1. First you need to run `gcc main.c`
+2. Then you can run `./main {input file name (e.g. input1.txt)}`
+
+___
+
+At the end of program's work terminal contains three strings. First string contains information about program work, second string contains output (content of the strip after the end of the work), and third string contains last state and transactions count at the moment of program's finish.
+
+Next paragraphs are about options of first line.
 
 Program has transactions count limit equals 10000. So if it makes 10000 transactions, you get a message **`MADE 10000 transactions`**.
 
 If it fails on some transaction, you get a message **`FAIL after {transactions count} transactions`**.
 
 Else if program successfully finishes, you get a message **`STOP after {transactions count} transactions`**.
+
+"**`_`**" is used as a lambda symbol.

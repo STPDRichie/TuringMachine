@@ -15,7 +15,7 @@ Input file format:
 3. The next lines to the file's end contain the transactions of the Turing machine
 
 Transaction line format: <br />
-`"current state" "input symbol" -> "new state" "new symbol" "movement"`
+`{current state} {input symbol} -> {new state} {new symbol} {movement}`
 
 P.S. States that are not initial or terminal are written directly in transactions and nowhere else. `_` is used as a lambda symbol.
 
